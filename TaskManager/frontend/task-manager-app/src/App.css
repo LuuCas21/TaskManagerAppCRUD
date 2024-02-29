@@ -1,0 +1,123 @@
+* {
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+
+.App {
+  width:100%;
+  height:100vh;
+  border:1px solid red;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+}
+
+/*.App > .task_wrapper {
+  width:60%;
+  height:550px;
+  min-height:auto;
+  display:flex;
+  flex-direction:column;
+  border:1px solid black;
+}*/
+
+.form_task {
+  width:100%;
+  height:50px;
+  display:flex;
+  justify-content:center;
+  margin-top:8px;
+}
+
+.form_task > input, button {
+  margin:0 8px;
+  outline:none;
+}
+
+.form_task > .input_task {
+  width:30%;
+  padding:8px 16px;
+  border:1px solid #ccc;
+}
+
+.form_task > .submit_task_btn {
+  padding:8px 16px;
+  border:1px solid #ccc;
+  cursor:pointer;
+}
+
+.task_gallery {
+  position:relative;
+  width:100%;
+  height:100%;
+  display:flex;
+  align-items:center;
+  flex-direction:column;
+  overflow-y:scroll;
+  z-index:3;
+}
+
+.task {
+  width:40%;
+  height:50px;
+  border:1px solid #ccc;
+  letter-spacing:1px;
+  margin:8px 0;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+}
+
+.task > .taskName {
+  font-size:17px;
+}
+
+.task > div > .delete_btn {
+  padding:8px 12px;
+  cursor:pointer;
+}
+
+.task > div > .update_btn {
+  padding:8px 12px;
+  cursor:pointer;
+}
+
+.isShow {
+  display:none;
+}
+
+.update_task_div {
+  position:absolute;
+  width:50%;
+  height:220px;
+  border:1px solid black;
+  background-color:white;
+  z-index:5;
+}
+
+.update_task_div > .update_input_form {
+  width:100%;
+  height:50px;
+  display:flex;
+  justify-content:center;
+  margin-top:8px;
+}
+
+.update_task_div > .update_input_form > input, button {
+  margin:0 8px;
+  outline:none;
+}
+
+.update_task_div > .update_input_form > input {
+  width:30%;
+  padding:8px 16px;
+  border:1px solid #ccc;
+}
+
+.update_task_div > .update_input_form > button {
+  padding:8px 16px;
+  border:1px solid #ccc;
+  cursor:pointer;
+}
